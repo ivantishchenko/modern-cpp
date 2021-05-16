@@ -20,7 +20,7 @@ int main() {
         capital_map[country] = capital;
       }
       else {
-        string old_capital = capital_map.at(country);
+        const string& old_capital = capital_map.at(country);
         if(capital == old_capital) {
           cout << "Country " << country << " hasn't changed its capital" << endl;
         }
