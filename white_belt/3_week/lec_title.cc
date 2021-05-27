@@ -22,7 +22,7 @@ struct LectureTitle {
   string course;
   string week;
 
-  LectureTitle(Specialization s, Course c, Week w) : specialization(s.specialization), course(c.course), week(w.week) {} 
+  LectureTitle(const Specialization& s, const Course& c, const Week& w) : specialization(s.specialization), course(c.course), week(w.week) {} 
 };
 
 int main() {
